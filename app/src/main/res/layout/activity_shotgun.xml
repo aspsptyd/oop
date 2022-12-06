@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center"
+    tools:context=".activity.ShotgunActivity">
+    
+    <TextView
+        android:id="@+id/textShow"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading..."/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/gun"/>
+    
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:onClick="reloadWeapon"
+            android:backgroundTint="#009688"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reload"/>
+        
+        <Button
+            android:onClick="infoDevice"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Info"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginRight="5dp"
+            android:onClick="shotGun"
+            android:backgroundTint="#E91E63"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shot"/>
+
+        <Button
+            android:layout_weight="1"
+            android:onClick="buy5"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#FF5722"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy 5"/>
+
+    </LinearLayout>
+
+</LinearLayout>
